@@ -1,4 +1,7 @@
-﻿Module Module1
+﻿Imports System.Windows.Forms
+
+Module Module1
+
 
     Public Class Conexion
 
@@ -9,7 +12,6 @@
 
         Public Sub New()
             For f = 0 To 5
-                'Console.Write("Ingrese importe del sueldo:")
                 letras(f) = f
             Next
         End Sub
@@ -34,18 +36,21 @@
 
     End Class
     Sub Main()
-        Dim per1 As Conexion
-        per1 = New Conexion()
-        per1.Inicializar()
-        per1.Imprimir()
+        'Dim per1 As Conexion
+        'per1 = New Conexion()
+        'per1.Inicializar()
+        'per1.Imprimir()
 
 
-        Dim mas As Integer
-        Console.WriteLine("Cuantos años mas?: ")
-        mas = Console.ReadLine()
-        Dim tot As Integer
-        tot = per1.MasEdad(mas)
-        Console.WriteLine("y en" & mas & " vas a tener " & tot)
-        Console.ReadKey()
+        'Dim mas As Integer
+        'Console.WriteLine("Cuantos años mas?: ")
+        'mas = Console.ReadLine()
+        'Dim tot As Integer
+        'tot = per1.MasEdad(mas)
+        'Console.WriteLine("y en" & mas & " vas a tener " & tot)
+        'Console.ReadKey()
+        Dim form As Form1
+        form = New Form1()
+        form.ShowDialog()
     End Sub
 End Module
